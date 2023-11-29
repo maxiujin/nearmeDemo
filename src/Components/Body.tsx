@@ -49,7 +49,24 @@ export default function Body() {
   };
 
   return (
-    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', position: 'relative' }}>
+<Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', position: 'relative' }}>
+  {/* Yellow Banner */}
+  <Box sx={{ 
+    position: 'absolute', 
+    top: '20px', // Adjust top as needed
+    backgroundColor: 'yellow', 
+    padding: '10px', 
+    borderRadius: '5px',
+    marginTop:6,
+    zIndex: 10 // Ensure it's above the card
+  }}>
+    <Typography variant="h6" sx={{ color: 'black', textAlign: 'center' }}>
+      50%OFF for the first ride
+    </Typography>
+    <Typography variant="body1" sx={{ color: 'black', textAlign: 'center' }}>
+      *Discount limit 1,000yen
+    </Typography>
+  </Box>
     <Card sx={{ 
         width: 500, 
         backgroundColor: '#784BC8', 
@@ -91,8 +108,8 @@ export default function Body() {
   </Typography>
   <Box sx={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
   <Box sx={{ display: 'flex', alignItems: 'center', marginRight: 2 }}>
-    <FlightTakeoffIcon sx={{ color: 'white' }} />
-    <FormControl margin="normal" variant="standard" sx={{ minWidth: 120, '.MuiInput-underline:before': { borderBottomColor: 'white' } }}>
+    <FlightTakeoffIcon sx={{ color: 'white', marginTop:3, paddingRight:1 }} />
+    <FormControl margin="normal" variant="standard" sx={{ minWidth: 120,  '.MuiInput-underline:before': { borderBottomColor: 'white' } }}>
       <InputLabel sx={{ color: 'white' }}>Airport</InputLabel>
       <Select 
         defaultValue="Haneda Airport" 
@@ -104,7 +121,7 @@ export default function Body() {
     </FormControl>
   </Box>
   <FormControl margin="normal" variant="standard" sx={{ minWidth: 120, '.MuiInput-underline:before': { borderBottomColor: 'white' } }}>
-    <InputLabel sx={{ color: 'white' }}>Terminal</InputLabel>
+    <InputLabel sx={{ color: 'white' }}>Input terminal</InputLabel>
     <Select 
       defaultValue="" 
       sx={{ color: 'white', '.MuiSvgIcon-root': { color: 'white' } }}
@@ -116,7 +133,7 @@ export default function Body() {
 
 
   <Box sx={{ position: 'relative', mt: 2, width: '100%' }}>
-  <Box sx={{ position: 'absolute', left: '50px' }}> {/* Adjust left value as needed */}
+  <Box sx={{ position: 'absolute', left: '40px' }}> {/* Adjust left value as needed */}
     <FormControl variant="standard" sx={{ minWidth: 360 }}>
       <TextField
         id="pickup-location"
