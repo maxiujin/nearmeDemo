@@ -75,7 +75,8 @@ export default function Body() {
         overflow: 'visible',
         minHeight: '60vh', // Set a minimum height for the card
         display: 'flex',
-        flexDirection: 'column'
+        flexDirection: 'column',
+        
       }}> 
         <Tabs
           value={value}
