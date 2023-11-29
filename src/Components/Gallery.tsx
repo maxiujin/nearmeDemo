@@ -31,8 +31,8 @@ export default function Gallery() {
   return (
     <Box
       sx={{
-        width: 400,
-        height: 400,
+        width: 1000,
+        height: 1000,
         overflow: 'hidden',
         borderRadius: '10px',
         position: 'relative',

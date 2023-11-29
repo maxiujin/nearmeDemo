@@ -5,6 +5,7 @@ const Header = () => {
   return (
     <>
     <div style={{  }}>
+        
     <h1 style={{color:"#784BC8", paddingLeft:400, paddingTop:20}}>Your hassle-free airport shuttle: Ride comfortably from airport to home</h1>
  
     </div>
