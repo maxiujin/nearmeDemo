@@ -198,8 +198,8 @@ export default function Body() {
             position: 'absolute', 
             bottom: '-100px', // Adjust as needed
             right: '-100px', // Adjust as needed
-            maxWidth: '100px', // Adjust the size as needed
-            maxHeight: '100px' 
+            maxWidth: '200px', // Adjust the size as needed
+            maxHeight: '200px' 
           }} 
         />
       </Card>

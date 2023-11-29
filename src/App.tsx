@@ -5,7 +5,7 @@ import Gallery from './Components/Gallery';
 import Video from './Components/Video';
 import Header from './Components/Header';
 import PhoneImage from './Components/PhoneImage';
-
+import HowToUse from './Components/HowToUse';
 function App() {
   return (
     <div className="App">
@@ -28,6 +28,7 @@ function App() {
           <Body />
         </div>
       </div>
+<HowToUse/>
       <Video/>
     </div>
   );

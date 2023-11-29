@@ -18,7 +18,7 @@ const PhoneImage = () => {
     alt="reviews" 
     style={{ 
   
-        width:'1000px', // This ensures the image is responsive
+        width:'1050px', // This ensures the image is responsive
         height: '300px' 
     }} 
   />
